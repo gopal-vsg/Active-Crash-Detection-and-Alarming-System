@@ -15,7 +15,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 count = 1
 def running():
     global count
-    video = cv2.VideoCapture('Untitled video - Made with Clipchamp (1).mp4')
+    video = cv2.VideoCapture(0)
     while True:
         ret, frame = video.read()
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
